@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ad1796b23343443496e62dbcb3d68b32" Name="Diagram1">
+        <EntityTypeShape EntityType="SalesManagmentDBModel.Category" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesManagmentDBModel.Customer" Width="1.5" PointX="3.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesManagmentDBModel.Product" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesManagmentDBModel.PurchaseDetail" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesManagmentDBModel.Purchase" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesManagmentDBModel.Role" Width="1.5" PointX="8.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesManagmentDBModel.SalesInvoiceDetail" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesManagmentDBModel.SalesInvoice" Width="1.5" PointX="6" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesManagmentDBModel.Supplier" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesManagmentDBModel.sysdiagram" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesManagmentDBModel.User" Width="1.5" PointX="11" PointY="8.75" IsExpanded="true" />
+        <AssociationConnector Association="SalesManagmentDBModel.FK__Products__Catego__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesManagmentDBModel.FK__SalesInvo__Custo__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesManagmentDBModel.FK__PurchaseD__Produ__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesManagmentDBModel.FK__SalesInvo__Produ__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesManagmentDBModel.FK__PurchaseD__Purch__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesManagmentDBModel.FK__Purchases__Suppl__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesManagmentDBModel.FK_Users_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesManagmentDBModel.FK__SalesInvo__Invoi__5629CD9C" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
