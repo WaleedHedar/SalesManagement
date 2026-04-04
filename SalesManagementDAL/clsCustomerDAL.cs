@@ -37,6 +37,11 @@ namespace SalesManagementApp.SalesManagementDAL
         }
 
 
+        public List<Customer> SearchCustomers(string searchTerm)
+        {
+            return db.Customers.Where(c => c.CustomerName.Contains(searchTerm) || c.Phone.Contains(searchTerm)).ToList();
+        }
+
         public bool UpdateCustomer(int CustomerID, string CustomerName, string Phone, string Address)
         {
             Customer customer = db.Customers.Find(CustomerID);

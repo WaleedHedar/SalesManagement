@@ -17,7 +17,20 @@ namespace SalesManagementApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmLogIn());
+
+            
+            FrmLogIn login = new FrmLogIn();
+            // this will show the login form as a dialog, and we will check the result
+            if (login.ShowDialog() == DialogResult.OK)
+            {
+                // this means the user logged in successfully, so we can open the main form
+                Application.Run(new FrmMainForm());
+            }
+            else
+            {
+                // this means the user either canceled the login or failed to log in, so we will exit the application
+                Application.Exit();
+            }
         }
     }
 }

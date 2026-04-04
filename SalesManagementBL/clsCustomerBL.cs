@@ -18,7 +18,10 @@ namespace SalesManagementApp.SalesManagementBL
            return  clsCustomerDAL.GetAllCustomers().ToList();
         }
 
-
+        public List<Customer> SearchCustomersBL(string searchTerm)
+        {
+            return clsCustomerDAL.SearchCustomers(searchTerm).ToList();
+        }
 
         public bool AddCustomerBL(Customer customer)
         {

@@ -34,17 +34,15 @@ namespace SalesManagementApp.SalesMamagementPL
 
 
             //dont forget the Permission of the user to open the main form and show the buttons that he has access to them
-            
+            clsCurrentUser._UserName = txtUserName.Text.Trim();
 
             if (IsExist!=null)
             {
-                MessageBox.Show($"  ( لاتنسي الصلاحيات ) {userName} تم تسجيل الدخول بنجاح","تسجيل الدخول",MessageBoxButtons.OKCancel,MessageBoxIcon.Information);
+                MessageBox.Show($"  ( لاتنسي الصلاحيات ) {userName} تم تسجيل الدخول بنجاح","تسجيل الدخول",MessageBoxButtons.OKCancel,MessageBoxIcon.Information);    
 
-                clsCurrentUser._UserName = txtUserName.Text.Trim();
-                this.Hide();
-                FrmMainForm mainForm = new FrmMainForm();
-                mainForm.ShowDialog();
-                
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+               
 
             }
             else

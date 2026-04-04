@@ -1,49 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\",
+  "WorkspaceRootPath": "D:\\MyProjectSalesManagement\\SalesManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|d:\\myprojectsalesmanagemet\\salesmanagementapp\\usercontrols\\ctrlcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|solutionrelative:usercontrols\\ctrlcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|d:\\myprojectsalesmanagement\\salesmanagement\\salesmamagementpl\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|solutionrelative:salesmamagementpl\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|d:\\myprojectsalesmanagemet\\salesmanagementapp\\usercontrols\\ctrlcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|solutionrelative:usercontrols\\ctrlcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|D:\\MyProjectSalesManagemet\\SalesManagementApp\\salesmamagementpl\\frmcustomersmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|solutionrelative:salesmamagementpl\\frmcustomersmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|d:\\myprojectsalesmanagemet\\salesmanagementapp\\salesmamagementpl\\frmaddudatecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|solutionrelative:salesmamagementpl\\frmaddudatecustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|D:\\MyProjectSalesManagemet\\SalesManagementApp\\salesmamagementpl\\frmcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|solutionrelative:salesmamagementpl\\frmcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|D:\\MyProjectSalesManagemet\\SalesManagementApp\\salesmanagementbl\\clscustomerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|solutionrelative:salesmanagementbl\\clscustomerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|D:\\MyProjectSalesManagemet\\SalesManagementApp\\salesmamagementpl\\frmcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|solutionrelative:salesmamagementpl\\frmcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|d:\\myprojectsalesmanagemet\\salesmanagementapp\\salesmamagementpl\\frmmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|D:\\MyProjectSalesManagement\\SalesManagement\\salesmamagementpl\\frmmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|solutionrelative:salesmamagementpl\\frmmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|d:\\myprojectsalesmanagemet\\salesmanagementapp\\salesmamagementpl\\frmmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|D:\\MyProjectSalesManagement\\SalesManagement\\salesmamagementpl\\frmmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|solutionrelative:salesmamagementpl\\frmmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|D:\\MyProjectSalesManagemet\\SalesManagementApp\\salesmamagementpl\\frmcustomersmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|solutionrelative:salesmamagementpl\\frmcustomersmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|d:\\myprojectsalesmanagement\\salesmanagement\\salesmamagementpl\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|solutionrelative:salesmamagementpl\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|D:\\MyProjectSalesManagemet\\SalesManagementApp\\salesmanagementdal\\clscustomerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|d:\\myprojectsalesmanagement\\salesmanagement\\usercontrols\\ctrlcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|solutionrelative:usercontrols\\ctrlcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|D:\\MyProjectSalesManagement\\SalesManagement\\usercontrols\\ctrlcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|solutionrelative:usercontrols\\ctrlcustomers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|D:\\MyProjectSalesManagement\\SalesManagement\\salesmanagementbl\\clscustomerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|solutionrelative:salesmanagementbl\\clscustomerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|D:\\MyProjectSalesManagement\\SalesManagement\\salesmanagementdal\\clscustomerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ACC1CD2-8078-4280-A82E-B9C261C166E4}|SalesManagementApp.csproj|solutionrelative:salesmanagementdal\\clscustomerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,53 +42,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmAddUdateCustomers.cs [Design]",
-              "DocumentMoniker": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesMamagementPL\\FrmAddUdateCustomers.cs",
-              "RelativeDocumentMoniker": "SalesMamagementPL\\FrmAddUdateCustomers.cs",
-              "ToolTip": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesMamagementPL\\FrmAddUdateCustomers.cs [Design]",
-              "RelativeToolTip": "SalesMamagementPL\\FrmAddUdateCustomers.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "FrmLogIn.cs",
+              "DocumentMoniker": "D:\\MyProjectSalesManagement\\SalesManagement\\SalesMamagementPL\\FrmLogIn.cs",
+              "RelativeDocumentMoniker": "SalesMamagementPL\\FrmLogIn.cs",
+              "ToolTip": "D:\\MyProjectSalesManagement\\SalesManagement\\SalesMamagementPL\\FrmLogIn.cs",
+              "RelativeToolTip": "SalesMamagementPL\\FrmLogIn.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAqwCYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T23:50:41.876Z",
+              "WhenOpened": "2026-04-04T21:41:15.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmLogIn.cs [Design]",
+              "DocumentMoniker": "D:\\MyProjectSalesManagement\\SalesManagement\\SalesMamagementPL\\FrmLogIn.cs",
+              "RelativeDocumentMoniker": "SalesMamagementPL\\FrmLogIn.cs",
+              "ToolTip": "D:\\MyProjectSalesManagement\\SalesManagement\\SalesMamagementPL\\FrmLogIn.cs [Design]",
+              "RelativeToolTip": "SalesMamagementPL\\FrmLogIn.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T21:23:01.562Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "FrmMainForm.cs",
-              "DocumentMoniker": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesMamagementPL\\FrmMainForm.cs",
+              "DocumentMoniker": "D:\\MyProjectSalesManagement\\SalesManagement\\SalesMamagementPL\\FrmMainForm.cs",
               "RelativeDocumentMoniker": "SalesMamagementPL\\FrmMainForm.cs",
-              "ToolTip": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesMamagementPL\\FrmMainForm.cs",
+              "ToolTip": "D:\\MyProjectSalesManagement\\SalesManagement\\SalesMamagementPL\\FrmMainForm.cs",
               "RelativeToolTip": "SalesMamagementPL\\FrmMainForm.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAIwD8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T23:36:41.033Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ctrlCustomers.cs",
-              "DocumentMoniker": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\UserControls\\ctrlCustomers.cs",
+              "DocumentMoniker": "D:\\MyProjectSalesManagement\\SalesManagement\\UserControls\\ctrlCustomers.cs",
               "RelativeDocumentMoniker": "UserControls\\ctrlCustomers.cs",
-              "ToolTip": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\UserControls\\ctrlCustomers.cs",
+              "ToolTip": "D:\\MyProjectSalesManagement\\SalesManagement\\UserControls\\ctrlCustomers.cs",
               "RelativeToolTip": "UserControls\\ctrlCustomers.cs",
-              "ViewState": "AgIAAKEAAAAAAAAAAAAmwLgAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAFcBAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T23:21:28.053Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ctrlCustomers.cs [Design]",
-              "DocumentMoniker": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\UserControls\\ctrlCustomers.cs",
+              "DocumentMoniker": "D:\\MyProjectSalesManagement\\SalesManagement\\UserControls\\ctrlCustomers.cs",
               "RelativeDocumentMoniker": "UserControls\\ctrlCustomers.cs",
-              "ToolTip": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\UserControls\\ctrlCustomers.cs [Design]",
+              "ToolTip": "D:\\MyProjectSalesManagement\\SalesManagement\\UserControls\\ctrlCustomers.cs [Design]",
               "RelativeToolTip": "UserControls\\ctrlCustomers.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T23:04:20.149Z",
@@ -108,11 +109,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "FrmMainForm.cs [Design]",
-              "DocumentMoniker": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesMamagementPL\\FrmMainForm.cs",
+              "DocumentMoniker": "D:\\MyProjectSalesManagement\\SalesManagement\\SalesMamagementPL\\FrmMainForm.cs",
               "RelativeDocumentMoniker": "SalesMamagementPL\\FrmMainForm.cs",
-              "ToolTip": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesMamagementPL\\FrmMainForm.cs [Design]",
+              "ToolTip": "D:\\MyProjectSalesManagement\\SalesManagement\\SalesMamagementPL\\FrmMainForm.cs [Design]",
               "RelativeToolTip": "SalesMamagementPL\\FrmMainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T22:38:39.549Z",
@@ -120,79 +121,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FrmCustomersMovement.cs",
-              "DocumentMoniker": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesMamagementPL\\FrmCustomersMovement.cs",
-              "RelativeDocumentMoniker": "SalesMamagementPL\\FrmCustomersMovement.cs",
-              "ToolTip": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesMamagementPL\\FrmCustomersMovement.cs",
-              "RelativeToolTip": "SalesMamagementPL\\FrmCustomersMovement.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCoAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-27T20:18:12.079Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmCustomersMovement.cs [Design]",
-              "DocumentMoniker": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesMamagementPL\\FrmCustomersMovement.cs",
-              "RelativeDocumentMoniker": "SalesMamagementPL\\FrmCustomersMovement.cs",
-              "ToolTip": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesMamagementPL\\FrmCustomersMovement.cs [Design]",
-              "RelativeToolTip": "SalesMamagementPL\\FrmCustomersMovement.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-27T20:00:14.396Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "clsCustomerDAL.cs",
-              "DocumentMoniker": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesManagementDAL\\clsCustomerDAL.cs",
+              "DocumentMoniker": "D:\\MyProjectSalesManagement\\SalesManagement\\SalesManagementDAL\\clsCustomerDAL.cs",
               "RelativeDocumentMoniker": "SalesManagementDAL\\clsCustomerDAL.cs",
-              "ToolTip": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesManagementDAL\\clsCustomerDAL.cs",
+              "ToolTip": "D:\\MyProjectSalesManagement\\SalesManagement\\SalesManagementDAL\\clsCustomerDAL.cs",
               "RelativeToolTip": "SalesManagementDAL\\clsCustomerDAL.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAASwB4AAAATAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAIA1wCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-26T22:09:29.102Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "clsCustomerBL.cs",
-              "DocumentMoniker": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesManagementBL\\clsCustomerBL.cs",
+              "DocumentMoniker": "D:\\MyProjectSalesManagement\\SalesManagement\\SalesManagementBL\\clsCustomerBL.cs",
               "RelativeDocumentMoniker": "SalesManagementBL\\clsCustomerBL.cs",
-              "ToolTip": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesManagementBL\\clsCustomerBL.cs",
+              "ToolTip": "D:\\MyProjectSalesManagement\\SalesManagement\\SalesManagementBL\\clsCustomerBL.cs",
               "RelativeToolTip": "SalesManagementBL\\clsCustomerBL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswCQAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswBcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-26T22:07:55.491Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FrmCustomers.cs",
-              "DocumentMoniker": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesMamagementPL\\FrmCustomers.cs",
-              "RelativeDocumentMoniker": "SalesMamagementPL\\FrmCustomers.cs",
-              "ToolTip": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesMamagementPL\\FrmCustomers.cs",
-              "RelativeToolTip": "SalesMamagementPL\\FrmCustomers.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAIwF4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T21:00:42.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FrmCustomers.cs [Design]",
-              "DocumentMoniker": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesMamagementPL\\FrmCustomers.cs",
-              "RelativeDocumentMoniker": "SalesMamagementPL\\FrmCustomers.cs",
-              "ToolTip": "D:\\MyProjectSalesManagemet\\SalesManagementApp\\SalesMamagementPL\\FrmCustomers.cs [Design]",
-              "RelativeToolTip": "SalesMamagementPL\\FrmCustomers.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T20:53:00.529Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

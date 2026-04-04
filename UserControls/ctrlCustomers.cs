@@ -1,5 +1,6 @@
 ﻿using SalesManagementApp.SalesMamagementPL;
 using SalesManagementApp.SalesManagementBL;
+using SalesManagementApp.SalesManagementDAL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,28 +20,14 @@ namespace SalesManagementApp.UserControls
             InitializeComponent();
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            int customerId = GetSelectedCustomerID();
 
-            if (Customer1.DeleteCustomerBL(customerId))
-            {
-                MessageBox.Show("تم حذف العميل بنجاح", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                RefereshDataGridView();
+        private enum Mode { Add = 0, Update = 1 }
 
-            }
-            else
-            {
-                MessageBox.Show("حدث خطأ أثناء حذف العميل", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void إستمرارToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+        private Mode _EnMode;
+        private int _CustomerID;
 
         clsCustomerBL Customer1 = new clsCustomerBL();
+
 
         private void SetupDataGridView()
         {
@@ -119,8 +106,6 @@ namespace SalesManagementApp.UserControls
 
         }
 
-       
-
         private int GetSelectedCustomerID()
         {
             if (dgvAllCustomers.SelectedRows.Count > 0)
@@ -133,85 +118,332 @@ namespace SalesManagementApp.UserControls
             return 0;
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void ctrlCustomers_Load(object sender, EventArgs e)
         {
-            FrmAddUdateCustomers frmAddUdateCustomers = new FrmAddUdateCustomers(0);
-            frmAddUdateCustomers.ShowDialog();
-            RefereshDataGridView();
+            
+            SetupDataGridView();
+            dgvAllCustomers.RowPostPaint += dgvAllCustomers_RowPostPaint;
+            grbBoxAddEditCustomer.Enabled = false;
+            grbBoxCustomersMovements.Enabled = false;
+            lblCustomerName.Text = "";
+            lblCustomerPhoneNumber.Text= "";
+
         }
 
-        private void btnUpdateCustomer_Click(object sender, EventArgs e)
+        private void btnAddToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            _EnMode = Mode.Add;
+            grbBoxAddEditCustomer.Enabled = true;
+
+        }
+
+        public struct stAddress
+        {
+            public string Area;
+            public string Block;
+            public string Street;
+            public string gada;
+            public string House;
+
+        }
+
+        private string GetFullAddress()
+        {
+            string area = txtAreaName.Text;
+            string block = txtBlockNaumber.Text;
+            string street = txtStreetNumber.Text;
+            string gada = txtGadaNumber.Text;
+            string house = txtHouseNumber.Text;
+
+            string fullAddress = area + ", " + block + ", " + street + ", " + gada + ", " + house;
+
+            return fullAddress;
+        }
+
+        private bool AddNewCustomer()
+        {
+            // this from class that build by Entity Frame Work to safe the parameters .
+            Customer Cust = new Customer();
+
+            Cust.CustomerName = txtCustomerName.Text.Trim();
+            Cust.Phone = txtCustomerPhoneNumber.Text.Trim();
+            Cust.Address = GetFullAddress();
+
+            return Customer1.AddCustomerBL(Cust);
+
+
+        }
+
+        private bool UpdateCustomer()
+        {
+            // this from class that build by Entity Frame Work to safe the parameters .
+            string CustomerName = txtCustomerName.Text;
+            string Phone = txtCustomerPhoneNumber.Text;
+            string Address = GetFullAddress();
+
+            return Customer1.UpdateCustomerBL(_CustomerID, CustomerName, Phone, Address);
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (_EnMode == Mode.Add)
+            {
+                if (AddNewCustomer())
+                {
+                    MessageBox.Show("تمت إضافة العميل بنجاح", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtCustomerPhoneNumber.Clear();
+                    txtCustomerName.Clear();
+                    txtAreaName.Clear();
+                    txtBlockNaumber.Clear();
+                    txtStreetNumber.Clear();
+                    txtGadaNumber.Clear();
+                    txtHouseNumber.Clear();
+                    RefereshDataGridView();
+                    grbBoxAddEditCustomer.Enabled = false;
+
+                }
+                else
+                {
+                    MessageBox.Show("حدث خطأ أثناء إضافة العميل", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                if (UpdateCustomer())
+                {
+                    MessageBox.Show("تم تحديث بيانات العميل بنجاح", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtCustomerPhoneNumber.Clear();
+                    txtCustomerName.Clear();
+                    txtAreaName.Clear();
+                    txtBlockNaumber.Clear();
+                    txtStreetNumber.Clear();
+                    txtGadaNumber.Clear();
+                    txtHouseNumber.Clear();
+                    RefereshDataGridView();
+                    grbBoxAddEditCustomer.Enabled = false;
+
+                }
+                else
+                {
+                    MessageBox.Show("حدث خطأ أثناء تحديث بيانات العميل", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+
+
+        }
+
+        private bool CheckIsPhoneNumberUsedBefore(string PhoneNumber)
+        {
+
+            return Customer1.IsPhoneNumberUsedBefore(PhoneNumber);
+
+        }
+
+        private void txtCustomerName_TextChanged(object sender, EventArgs e)
+        {
+            string Phone = txtCustomerPhoneNumber.Text;
+
+            if (_EnMode == Mode.Update)
+            {
+                return;
+            }
+
+
+            if (string.IsNullOrWhiteSpace(txtCustomerPhoneNumber.Text))
+            {
+                MessageBox.Show("يرجى إضافة رقم العميل أولا ", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                btnSave.Enabled = false;
+                txtCustomerPhoneNumber.Focus();
+                txtCustomerName.Clear();
+
+            }
+            else if (CheckIsPhoneNumberUsedBefore(Phone))
+            {
+                MessageBox.Show("رقم الهاتف هذا مستخدم من قبل يرجى إدخال رقم هاتف آخر", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                btnSave.Enabled = false;
+                txtCustomerPhoneNumber.Focus();
+                txtCustomerName.Clear();
+                return;
+
+            }
+            else
+            {
+
+                btnSave.Enabled = true;
+            }
+
+        }
+
+        private void FillDataToGrbBoxAddEdit(int CustomerID)
+        {
+
+            Customer customer = new Customer();
+            customer = Customer1.GetCustomerByIdBL(CustomerID);
+
+            if (customer != null)
+            {
+
+                txtCustomerPhoneNumber.Text = customer.Phone;
+                txtCustomerPhoneNumber.ReadOnly = true;
+
+                txtCustomerName.Text = customer.CustomerName;
+
+                lblCustomerPhoneNumber.Text = customer.Phone;
+                lblCustomerName.Text = customer.CustomerName;
+
+                if (customer.Address != null)
+                {
+                    string[] Address = customer.Address.Split(',')
+                                    .Select(s => s.Trim())
+                                    .ToArray();
+
+                    //this struct to handle the address. 
+                    stAddress Address1 = new stAddress
+                    {
+                        Area = Address.Length > 0 ? Address[0] : "",
+                        Block = Address.Length > 1 ? Address[1] : "",
+                        Street = Address.Length > 2 ? Address[2] : "",
+                        gada = Address.Length > 3 ? Address[3] : "",
+                        House = Address.Length > 4 ? Address[4] : ""
+                    };
+
+
+
+
+                    txtAreaName.Text = Address1.Area;
+                    txtBlockNaumber.Text = Address1.Block;
+                    txtStreetNumber.Text = Address1.Street;
+                    txtGadaNumber.Text = Address1.gada;
+                    txtHouseNumber.Text = Address1.House;
+
+                }
+                else
+                {
+                    txtAreaName.Text = "";
+                    txtBlockNaumber.Text = "";
+                    txtStreetNumber.Text = "";
+                    txtGadaNumber.Text = "";
+                    txtHouseNumber.Text = "";
+                }
+
+                txtNotes.Text = "";
+            }
+
+          
+
+        }
+
+        private void txtCustomerNumber_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+                e.Handled = true;
+        }
+
+        private void btnEditToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            _CustomerID = GetSelectedCustomerID();
+
+            DialogResult result = MessageBox.Show(
+                                        "هل تريد تعديل بيانات العميل؟",
+                                             "تأكيد ",
+                                   MessageBoxButtons.YesNo,
+                                    MessageBoxIcon.Warning);
+
+
+            if (result == DialogResult.No)
+            {
+                return;
+            }
+
             if (GetSelectedCustomerID() != 0)
             {
-                FrmAddUdateCustomers frmAddUdateCustomers = new FrmAddUdateCustomers(GetSelectedCustomerID());
-                frmAddUdateCustomers.ShowDialog();
-                RefereshDataGridView();
+                _EnMode = Mode.Update;
+                grbBoxAddEditCustomer.Enabled = true;
+                FillDataToGrbBoxAddEdit(_CustomerID);
+
             }
             else
             {
                 MessageBox.Show("من فضلك اختر عميل للتعديل عليه", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
 
-
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            dgvAllCustomers.DataSource = Customer1.SearchCustomersBL(txtSearch.Text);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            //this.Close();
+            txtCustomerPhoneNumber.Clear();
+            txtCustomerName.Clear();
+            txtAreaName.Clear();
+            txtBlockNaumber.Clear();
+            txtStreetNumber.Clear();
+            txtGadaNumber.Clear();
+            txtHouseNumber.Clear();
+            RefereshDataGridView();
+            grbBoxAddEditCustomer.Enabled = false;
         }
 
-      
-
-        private void btnMovement_Click(object sender, EventArgs e)
+        private void btnDeleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int customerId = GetSelectedCustomerID();
 
-            if (GetSelectedCustomerID() != 0)
+              DialogResult result = MessageBox.Show(
+                                        "هل تريد حذف العميل؟",
+                                             "تأكيد الحذف",
+                                   MessageBoxButtons.YesNo,
+                                    MessageBoxIcon.Warning  );
+
+
+             if(result == DialogResult.No)
+             {
+                return;
+             }
+
+            if (Customer1.DeleteCustomerBL(customerId))
             {
-                FrmCustomersMovement frmCustomersMovement = new FrmCustomersMovement(customerId);
-                frmCustomersMovement.ShowDialog();
+                MessageBox.Show("تم حذف العميل بنجاح", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RefereshDataGridView();
 
             }
             else
-                return;
-
+            {
+                MessageBox.Show("حدث خطأ أثناء حذف العميل", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void ctrlCustomers_Load(object sender, EventArgs e)
+        private void btnMovementToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            cmbSearchCustomers.SelectedIndex = 0;
-            SetupDataGridView();
-            dgvAllCustomers.RowPostPaint += dgvAllCustomers_RowPostPaint;
-            grbBoxAddEditCustomer.Enabled = false;
+            _CustomerID = GetSelectedCustomerID();
+
+            Customer customer = new Customer();
+            customer = Customer1.GetCustomerByIdBL(_CustomerID);
+
+            if (customer != null)
+            {
+                lblCustomerPhoneNumber.Text = customer.Phone;
+                lblCustomerName.Text = customer.CustomerName;
+                grbBoxCustomersMovements.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("من فضلك اختر عميل لعرض حركاته", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnCancel2_Click(object sender, EventArgs e)
+        {
             grbBoxCustomersMovements.Enabled = false;
-
+            lblCustomerPhoneNumber.Text = "-------------";
+            lblCustomerName.Text = "---------------------------";  
         }
 
-        private void إضافةToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void إلغاءToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void تعديلToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void حذفToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void الحركاتToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 
 }

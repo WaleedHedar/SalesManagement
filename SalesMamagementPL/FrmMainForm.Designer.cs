@@ -30,20 +30,20 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnSupplyerAccount = new System.Windows.Forms.Button();
-            this.btnCustomerAccount = new System.Windows.Forms.Button();
+            this.btnAddSalesInvoice = new System.Windows.Forms.Button();
             this.lblUserName = new System.Windows.Forms.Label();
-            this.MainPanel = new System.Windows.Forms.Panel();
+            this.btnGetAllSalesInvoices = new System.Windows.Forms.Button();
+            this.btnSupplyerAccount = new System.Windows.Forms.Button();
+            this.btnAddPurchesesInvoice = new System.Windows.Forms.Button();
+            this.btnCustomerAccount = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
+            this.btnGetAllPurchesesInvoices = new System.Windows.Forms.Button();
+            this.btnCustomers = new System.Windows.Forms.Button();
+            this.btnItems = new System.Windows.Forms.Button();
             this.btnReceiptVoucher = new System.Windows.Forms.Button();
             this.btnSuppliers = new System.Windows.Forms.Button();
-            this.btnGetAllPurchesesInvoices = new System.Windows.Forms.Button();
-            this.btnAddPurchesesInvoice = new System.Windows.Forms.Button();
-            this.btnItems = new System.Windows.Forms.Button();
             this.btnPaymentVoucher = new System.Windows.Forms.Button();
-            this.btnCustomers = new System.Windows.Forms.Button();
-            this.btnGetAllSalesInvoices = new System.Windows.Forms.Button();
-            this.btnAddSalesInvoice = new System.Windows.Forms.Button();
+            this.MainPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,33 +74,22 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.button1.Location = new System.Drawing.Point(28, 627);
+            this.button1.Location = new System.Drawing.Point(28, 678);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 37);
             this.button1.TabIndex = 12;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // btnSupplyerAccount
+            // btnAddSalesInvoice
             // 
-            this.btnSupplyerAccount.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnSupplyerAccount.Location = new System.Drawing.Point(28, 573);
-            this.btnSupplyerAccount.Name = "btnSupplyerAccount";
-            this.btnSupplyerAccount.Size = new System.Drawing.Size(212, 37);
-            this.btnSupplyerAccount.TabIndex = 11;
-            this.btnSupplyerAccount.Text = "كشف حساب مورد";
-            this.btnSupplyerAccount.UseVisualStyleBackColor = true;
-            this.btnSupplyerAccount.Click += new System.EventHandler(this.btnSupplyerAccount_Click);
-            // 
-            // btnCustomerAccount
-            // 
-            this.btnCustomerAccount.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnCustomerAccount.Location = new System.Drawing.Point(28, 518);
-            this.btnCustomerAccount.Name = "btnCustomerAccount";
-            this.btnCustomerAccount.Size = new System.Drawing.Size(212, 37);
-            this.btnCustomerAccount.TabIndex = 10;
-            this.btnCustomerAccount.Text = "كشف حساب عميل";
-            this.btnCustomerAccount.UseVisualStyleBackColor = true;
-            this.btnCustomerAccount.Click += new System.EventHandler(this.btnCustomerAccount_Click);
+            this.btnAddSalesInvoice.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnAddSalesInvoice.Location = new System.Drawing.Point(28, 19);
+            this.btnAddSalesInvoice.Name = "btnAddSalesInvoice";
+            this.btnAddSalesInvoice.Size = new System.Drawing.Size(212, 37);
+            this.btnAddSalesInvoice.TabIndex = 0;
+            this.btnAddSalesInvoice.Text = "إصدار فاتورة بيع";
+            this.btnAddSalesInvoice.UseVisualStyleBackColor = true;
+            this.btnAddSalesInvoice.Click += new System.EventHandler(this.btnAddSalesInvoice_Click);
             // 
             // lblUserName
             // 
@@ -113,25 +102,97 @@
             this.lblUserName.Size = new System.Drawing.Size(133, 32);
             this.lblUserName.TabIndex = 1;
             this.lblUserName.Text = "اسم المستخدم";
+            this.lblUserName.Click += new System.EventHandler(this.lblUserName_Click);
             // 
-            // MainPanel
+            // btnGetAllSalesInvoices
             // 
-            this.MainPanel.BackColor = System.Drawing.Color.Gainsboro;
-            this.MainPanel.Location = new System.Drawing.Point(12, 12);
-            this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1116, 815);
-            this.MainPanel.TabIndex = 2;
+            this.btnGetAllSalesInvoices.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnGetAllSalesInvoices.Location = new System.Drawing.Point(28, 72);
+            this.btnGetAllSalesInvoices.Name = "btnGetAllSalesInvoices";
+            this.btnGetAllSalesInvoices.Size = new System.Drawing.Size(212, 37);
+            this.btnGetAllSalesInvoices.TabIndex = 1;
+            this.btnGetAllSalesInvoices.Text = "مراجعة فواتير البيع";
+            this.btnGetAllSalesInvoices.UseVisualStyleBackColor = true;
+            this.btnGetAllSalesInvoices.Click += new System.EventHandler(this.btnGetAllSalesInvoices_Click);
+            // 
+            // btnSupplyerAccount
+            // 
+            this.btnSupplyerAccount.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnSupplyerAccount.Location = new System.Drawing.Point(28, 573);
+            this.btnSupplyerAccount.Name = "btnSupplyerAccount";
+            this.btnSupplyerAccount.Size = new System.Drawing.Size(212, 37);
+            this.btnSupplyerAccount.TabIndex = 11;
+            this.btnSupplyerAccount.Text = "كشف حساب مورد";
+            this.btnSupplyerAccount.UseVisualStyleBackColor = true;
+            this.btnSupplyerAccount.Click += new System.EventHandler(this.btnSupplyerAccount_Click);
+            // 
+            // btnAddPurchesesInvoice
+            // 
+            this.btnAddPurchesesInvoice.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnAddPurchesesInvoice.Location = new System.Drawing.Point(28, 129);
+            this.btnAddPurchesesInvoice.Name = "btnAddPurchesesInvoice";
+            this.btnAddPurchesesInvoice.Size = new System.Drawing.Size(212, 37);
+            this.btnAddPurchesesInvoice.TabIndex = 5;
+            this.btnAddPurchesesInvoice.Text = "إصدار فاتورة الشراء";
+            this.btnAddPurchesesInvoice.UseVisualStyleBackColor = true;
+            this.btnAddPurchesesInvoice.Click += new System.EventHandler(this.btnAddPurchesesInvoice_Click);
+            // 
+            // btnCustomerAccount
+            // 
+            this.btnCustomerAccount.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnCustomerAccount.Location = new System.Drawing.Point(28, 518);
+            this.btnCustomerAccount.Name = "btnCustomerAccount";
+            this.btnCustomerAccount.Size = new System.Drawing.Size(212, 37);
+            this.btnCustomerAccount.TabIndex = 10;
+            this.btnCustomerAccount.Text = "كشف حساب عميل";
+            this.btnCustomerAccount.UseVisualStyleBackColor = true;
+            this.btnCustomerAccount.Click += new System.EventHandler(this.btnCustomerAccount_Click);
             // 
             // btnReports
             // 
             this.btnReports.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnReports.Location = new System.Drawing.Point(28, 682);
+            this.btnReports.Location = new System.Drawing.Point(28, 626);
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(212, 37);
             this.btnReports.TabIndex = 9;
             this.btnReports.Text = "التقارير";
             this.btnReports.UseVisualStyleBackColor = true;
             this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
+            // 
+            // btnGetAllPurchesesInvoices
+            // 
+            this.btnGetAllPurchesesInvoices.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnGetAllPurchesesInvoices.Location = new System.Drawing.Point(28, 184);
+            this.btnGetAllPurchesesInvoices.Name = "btnGetAllPurchesesInvoices";
+            this.btnGetAllPurchesesInvoices.Size = new System.Drawing.Size(212, 37);
+            this.btnGetAllPurchesesInvoices.TabIndex = 6;
+            this.btnGetAllPurchesesInvoices.Text = "مراجعة فواتير الشراء";
+            this.btnGetAllPurchesesInvoices.UseVisualStyleBackColor = true;
+            this.btnGetAllPurchesesInvoices.Click += new System.EventHandler(this.btnGetAllPurchesesInvoices_Click);
+            // 
+            // btnCustomers
+            // 
+            this.btnCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCustomers.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnCustomers.Location = new System.Drawing.Point(28, 240);
+            this.btnCustomers.Name = "btnCustomers";
+            this.btnCustomers.Size = new System.Drawing.Size(212, 37);
+            this.btnCustomers.TabIndex = 2;
+            this.btnCustomers.Text = "إدارة العملاء";
+            this.btnCustomers.UseVisualStyleBackColor = false;
+            this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
+            // 
+            // btnItems
+            // 
+            this.btnItems.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnItems.Location = new System.Drawing.Point(28, 464);
+            this.btnItems.Name = "btnItems";
+            this.btnItems.Size = new System.Drawing.Size(212, 37);
+            this.btnItems.TabIndex = 4;
+            this.btnItems.Text = "فهرس الأصناف";
+            this.btnItems.UseVisualStyleBackColor = true;
+            this.btnItems.Click += new System.EventHandler(this.btnItems_Click);
             // 
             // btnReceiptVoucher
             // 
@@ -155,39 +216,6 @@
             this.btnSuppliers.UseVisualStyleBackColor = true;
             this.btnSuppliers.Click += new System.EventHandler(this.btnSuppliers_Click);
             // 
-            // btnGetAllPurchesesInvoices
-            // 
-            this.btnGetAllPurchesesInvoices.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnGetAllPurchesesInvoices.Location = new System.Drawing.Point(28, 184);
-            this.btnGetAllPurchesesInvoices.Name = "btnGetAllPurchesesInvoices";
-            this.btnGetAllPurchesesInvoices.Size = new System.Drawing.Size(212, 37);
-            this.btnGetAllPurchesesInvoices.TabIndex = 6;
-            this.btnGetAllPurchesesInvoices.Text = "مراجعة فواتير الشراء";
-            this.btnGetAllPurchesesInvoices.UseVisualStyleBackColor = true;
-            this.btnGetAllPurchesesInvoices.Click += new System.EventHandler(this.btnGetAllPurchesesInvoices_Click);
-            // 
-            // btnAddPurchesesInvoice
-            // 
-            this.btnAddPurchesesInvoice.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnAddPurchesesInvoice.Location = new System.Drawing.Point(28, 129);
-            this.btnAddPurchesesInvoice.Name = "btnAddPurchesesInvoice";
-            this.btnAddPurchesesInvoice.Size = new System.Drawing.Size(212, 37);
-            this.btnAddPurchesesInvoice.TabIndex = 5;
-            this.btnAddPurchesesInvoice.Text = "إصدار فاتورة الشراء";
-            this.btnAddPurchesesInvoice.UseVisualStyleBackColor = true;
-            this.btnAddPurchesesInvoice.Click += new System.EventHandler(this.btnAddPurchesesInvoice_Click);
-            // 
-            // btnItems
-            // 
-            this.btnItems.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnItems.Location = new System.Drawing.Point(28, 464);
-            this.btnItems.Name = "btnItems";
-            this.btnItems.Size = new System.Drawing.Size(212, 37);
-            this.btnItems.TabIndex = 4;
-            this.btnItems.Text = "فهرس الأصناف";
-            this.btnItems.UseVisualStyleBackColor = true;
-            this.btnItems.Click += new System.EventHandler(this.btnItems_Click);
-            // 
             // btnPaymentVoucher
             // 
             this.btnPaymentVoucher.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -199,40 +227,13 @@
             this.btnPaymentVoucher.UseVisualStyleBackColor = true;
             this.btnPaymentVoucher.Click += new System.EventHandler(this.btnPaymentVoucher_Click);
             // 
-            // btnCustomers
+            // MainPanel
             // 
-            this.btnCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCustomers.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnCustomers.Location = new System.Drawing.Point(28, 240);
-            this.btnCustomers.Name = "btnCustomers";
-            this.btnCustomers.Size = new System.Drawing.Size(212, 37);
-            this.btnCustomers.TabIndex = 2;
-            this.btnCustomers.Text = "إدارة العملاء";
-            this.btnCustomers.UseVisualStyleBackColor = false;
-            this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
-            // 
-            // btnGetAllSalesInvoices
-            // 
-            this.btnGetAllSalesInvoices.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnGetAllSalesInvoices.Location = new System.Drawing.Point(28, 72);
-            this.btnGetAllSalesInvoices.Name = "btnGetAllSalesInvoices";
-            this.btnGetAllSalesInvoices.Size = new System.Drawing.Size(212, 37);
-            this.btnGetAllSalesInvoices.TabIndex = 1;
-            this.btnGetAllSalesInvoices.Text = "مراجعة فواتير البيع";
-            this.btnGetAllSalesInvoices.UseVisualStyleBackColor = true;
-            this.btnGetAllSalesInvoices.Click += new System.EventHandler(this.btnGetAllSalesInvoices_Click);
-            // 
-            // btnAddSalesInvoice
-            // 
-            this.btnAddSalesInvoice.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnAddSalesInvoice.Location = new System.Drawing.Point(28, 19);
-            this.btnAddSalesInvoice.Name = "btnAddSalesInvoice";
-            this.btnAddSalesInvoice.Size = new System.Drawing.Size(212, 37);
-            this.btnAddSalesInvoice.TabIndex = 0;
-            this.btnAddSalesInvoice.Text = "إصدار فاتورة بيع";
-            this.btnAddSalesInvoice.UseVisualStyleBackColor = true;
-            this.btnAddSalesInvoice.Click += new System.EventHandler(this.btnAddSalesInvoice_Click);
+            this.MainPanel.BackColor = System.Drawing.Color.Gainsboro;
+            this.MainPanel.Location = new System.Drawing.Point(12, 12);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(1116, 815);
+            this.MainPanel.TabIndex = 2;
             // 
             // FrmMainForm
             // 
@@ -244,7 +245,9 @@
             this.Controls.Add(this.MainPanel);
             this.MaximizeBox = false;
             this.Name = "FrmMainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "الصفحة الرئيسية";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMainForm_FormClosing);
             this.Load += new System.EventHandler(this.FrmMainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

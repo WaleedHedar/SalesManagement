@@ -19,6 +19,7 @@ namespace SalesManagementApp.SalesMamagementPL
         }
 
         public  string UserName = clsCurrentUser._UserName;
+
         private void FrmMainForm_Load(object sender, EventArgs e)
         {
             lblUserName.Text = UserName;
@@ -101,6 +102,43 @@ namespace SalesManagementApp.SalesMamagementPL
         private void btnItems_Click(object sender, EventArgs e)
         {
             ActionNotEmplentedYet();
+        }
+
+        private void FrmMainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+
+            DialogResult result = MessageBox.Show(
+                "هل تريد إغلاق البرنامج؟",
+                "تأكيد",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.No)
+            {
+                e.Cancel = true; // 
+            }
+        }
+
+        private void lblUserName_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            // this to hide the main form while the login form is open, and show it again if the login is successful.
+            FrmLogIn login = new FrmLogIn();
+
+            // this as model dialog to prevent the user from interacting with the main form while the login form is open, and to get the result of the login form.
+            if (login.ShowDialog() == DialogResult.OK)
+            {
+                // if the login is successful → we show the main form again.
+                this.Show();
+            }
+            else
+            {
+                //if the login is not successful → we close the main form.
+                Application.Exit();
+            }
         }
     }
 }

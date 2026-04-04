@@ -104,7 +104,8 @@
             this.Controls.Add(this.txtPassWord);
             this.Controls.Add(this.txtUserName);
             this.Name = "FrmLogIn";
-            this.Text = "FrmLogIn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "تسجيل الدخول";
             this.ResumeLayout(false);
             this.PerformLayout();
 
