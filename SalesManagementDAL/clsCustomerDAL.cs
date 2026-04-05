@@ -33,7 +33,7 @@ namespace SalesManagementApp.SalesManagementDAL
                 return false;
             }
 
-            db.Customers.AddOrUpdate(customer);
+           
         }
 
 

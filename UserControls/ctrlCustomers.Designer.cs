@@ -74,6 +74,8 @@
             this.txtCustomerPhoneNumber = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.grbBoxCustomersMovements = new System.Windows.Forms.GroupBox();
+            this.btnCustomerCheckAccount = new System.Windows.Forms.Button();
+            this.btnCancel2 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.btnReturnPurchacesInvoice = new System.Windows.Forms.Button();
             this.btnPurchecesInvoices = new System.Windows.Forms.Button();
@@ -86,8 +88,6 @@
             this.lblCustomerPhoneNumber = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.lblCustomerName = new System.Windows.Forms.Label();
-            this.btnCancel2 = new System.Windows.Forms.Button();
-            this.btnCustomerCheckAccount = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllCustomers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
@@ -111,6 +111,7 @@
             this.label1.Size = new System.Drawing.Size(102, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "إدراة العملاء ";
+          
             // 
             // panel1
             // 
@@ -120,6 +121,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1099, 37);
             this.panel1.TabIndex = 1;
+           
             // 
             // groupBox1
             // 
@@ -137,6 +139,7 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "إدارة العملاء";
+           
             // 
             // dgvAllCustomers
             // 
@@ -153,6 +156,7 @@
             this.dgvAllCustomers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dgvAllCustomers.Size = new System.Drawing.Size(723, 378);
             this.dgvAllCustomers.TabIndex = 11;
+            
             // 
             // CustomerID
             // 
@@ -183,6 +187,7 @@
             // 
             this.customersBindingSource.DataMember = "Customers";
             this.customersBindingSource.DataSource = this.salesManagmentDBDataSet;
+            
             // 
             // salesManagmentDBDataSet
             // 
@@ -197,6 +202,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(367, 33);
             this.panel2.TabIndex = 10;
+            
             // 
             // menuStrip1
             // 
@@ -210,6 +216,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(367, 27);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+           
             // 
             // btnAddToolStripMenuItem
             // 
@@ -252,6 +259,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(576, 37);
             this.panel3.TabIndex = 9;
+          
             // 
             // label13
             // 
@@ -262,6 +270,7 @@
             this.label13.Size = new System.Drawing.Size(56, 19);
             this.label13.TabIndex = 17;
             this.label13.Text = "البحــــــــــث";
+           
             // 
             // txtSearch
             // 
@@ -317,6 +326,7 @@
             this.grbBoxAddEditCustomer.TabIndex = 3;
             this.grbBoxAddEditCustomer.TabStop = false;
             this.grbBoxAddEditCustomer.Text = "إضافة عميل / تعديل بيانات عميل";
+           
             // 
             // grbCustomerAddress
             // 
@@ -340,6 +350,7 @@
             this.grbCustomerAddress.TabIndex = 33;
             this.grbCustomerAddress.TabStop = false;
             this.grbCustomerAddress.Text = "العــــــــنوان";
+           
             // 
             // btnCancel
             // 
@@ -364,6 +375,7 @@
             this.label9.Size = new System.Drawing.Size(62, 19);
             this.label9.TabIndex = 33;
             this.label9.Text = "ملاحظات";
+            
             // 
             // label3
             // 
@@ -375,6 +387,7 @@
             this.label3.Size = new System.Drawing.Size(80, 19);
             this.label3.TabIndex = 31;
             this.label3.Text = "أسم المنطقة";
+          
             // 
             // txtAreaName
             // 
@@ -385,6 +398,7 @@
             this.txtAreaName.Name = "txtAreaName";
             this.txtAreaName.Size = new System.Drawing.Size(154, 29);
             this.txtAreaName.TabIndex = 22;
+           
             // 
             // txtNotes
             // 
@@ -395,6 +409,7 @@
             this.txtNotes.Name = "txtNotes";
             this.txtNotes.Size = new System.Drawing.Size(580, 49);
             this.txtNotes.TabIndex = 32;
+            
             // 
             // btnSave
             // 
@@ -419,6 +434,7 @@
             this.label4.Size = new System.Drawing.Size(72, 19);
             this.label4.TabIndex = 23;
             this.label4.Text = "رقم القطعة";
+           
             // 
             // txtHouseNumber
             // 
@@ -429,6 +445,7 @@
             this.txtHouseNumber.Name = "txtHouseNumber";
             this.txtHouseNumber.Size = new System.Drawing.Size(154, 29);
             this.txtHouseNumber.TabIndex = 30;
+          
             // 
             // txtBlockNaumber
             // 
@@ -439,6 +456,7 @@
             this.txtBlockNaumber.Name = "txtBlockNaumber";
             this.txtBlockNaumber.Size = new System.Drawing.Size(127, 29);
             this.txtBlockNaumber.TabIndex = 24;
+           
             // 
             // label7
             // 
@@ -450,6 +468,7 @@
             this.label7.Size = new System.Drawing.Size(41, 19);
             this.label7.TabIndex = 29;
             this.label7.Text = "المنزل";
+            
             // 
             // label5
             // 
@@ -461,6 +480,7 @@
             this.label5.Size = new System.Drawing.Size(45, 19);
             this.label5.TabIndex = 25;
             this.label5.Text = "الشارع";
+           
             // 
             // txtGadaNumber
             // 
@@ -471,6 +491,7 @@
             this.txtGadaNumber.Name = "txtGadaNumber";
             this.txtGadaNumber.Size = new System.Drawing.Size(127, 29);
             this.txtGadaNumber.TabIndex = 28;
+           
             // 
             // label6
             // 
@@ -482,6 +503,7 @@
             this.label6.Size = new System.Drawing.Size(68, 19);
             this.label6.TabIndex = 27;
             this.label6.Text = "رقم الجادة";
+          
             // 
             // txtStreetNumber
             // 
@@ -492,6 +514,7 @@
             this.txtStreetNumber.Name = "txtStreetNumber";
             this.txtStreetNumber.Size = new System.Drawing.Size(154, 29);
             this.txtStreetNumber.TabIndex = 26;
+         
             // 
             // txtCustomerName
             // 
@@ -514,6 +537,7 @@
             this.label2.Size = new System.Drawing.Size(71, 19);
             this.label2.TabIndex = 19;
             this.label2.Text = "أسم العميل";
+           
             // 
             // txtCustomerPhoneNumber
             // 
@@ -524,6 +548,7 @@
             this.txtCustomerPhoneNumber.Name = "txtCustomerPhoneNumber";
             this.txtCustomerPhoneNumber.Size = new System.Drawing.Size(154, 29);
             this.txtCustomerPhoneNumber.TabIndex = 17;
+           
             this.txtCustomerPhoneNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCustomerNumber_KeyPress);
             // 
             // label8
@@ -536,6 +561,7 @@
             this.label8.Size = new System.Drawing.Size(68, 19);
             this.label8.TabIndex = 16;
             this.label8.Text = "رقم العميل";
+          
             // 
             // grbBoxCustomersMovements
             // 
@@ -560,147 +586,19 @@
             this.grbBoxCustomersMovements.TabIndex = 34;
             this.grbBoxCustomersMovements.TabStop = false;
             this.grbBoxCustomersMovements.Text = "حركات العملاء";
+           
             // 
-            // label12
+            // btnCustomerCheckAccount
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.SystemColors.Control;
-            this.label12.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label12.Location = new System.Drawing.Point(38, 90);
-            this.label12.Name = "label12";
-            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label12.Size = new System.Drawing.Size(287, 15);
-            this.label12.TabIndex = 28;
-            this.label12.Text = "----------------------------------------------------------------------";
-            // 
-            // btnReturnPurchacesInvoice
-            // 
-            this.btnReturnPurchacesInvoice.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnReturnPurchacesInvoice.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnReturnPurchacesInvoice.Location = new System.Drawing.Point(61, 404);
-            this.btnReturnPurchacesInvoice.Name = "btnReturnPurchacesInvoice";
-            this.btnReturnPurchacesInvoice.Size = new System.Drawing.Size(221, 32);
-            this.btnReturnPurchacesInvoice.TabIndex = 26;
-            this.btnReturnPurchacesInvoice.Text = "فواتير مرجع الشراء";
-            this.btnReturnPurchacesInvoice.UseVisualStyleBackColor = false;
-            // 
-            // btnPurchecesInvoices
-            // 
-            this.btnPurchecesInvoices.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnPurchecesInvoices.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnPurchecesInvoices.Location = new System.Drawing.Point(61, 351);
-            this.btnPurchecesInvoices.Name = "btnPurchecesInvoices";
-            this.btnPurchecesInvoices.Size = new System.Drawing.Size(221, 32);
-            this.btnPurchecesInvoices.TabIndex = 25;
-            this.btnPurchecesInvoices.Text = "فواتير الشراء";
-            this.btnPurchecesInvoices.UseVisualStyleBackColor = false;
-            // 
-            // btnPaymentVoucher
-            // 
-            this.btnPaymentVoucher.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnPaymentVoucher.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnPaymentVoucher.Location = new System.Drawing.Point(61, 457);
-            this.btnPaymentVoucher.Name = "btnPaymentVoucher";
-            this.btnPaymentVoucher.Size = new System.Drawing.Size(221, 32);
-            this.btnPaymentVoucher.TabIndex = 24;
-            this.btnPaymentVoucher.Text = "سندات الصرف";
-            this.btnPaymentVoucher.UseVisualStyleBackColor = false;
-            // 
-            // btnReceivedVoucher
-            // 
-            this.btnReceivedVoucher.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnReceivedVoucher.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnReceivedVoucher.Location = new System.Drawing.Point(61, 245);
-            this.btnReceivedVoucher.Name = "btnReceivedVoucher";
-            this.btnReceivedVoucher.Size = new System.Drawing.Size(221, 32);
-            this.btnReceivedVoucher.TabIndex = 23;
-            this.btnReceivedVoucher.Text = "سندات القبض";
-            this.btnReceivedVoucher.UseVisualStyleBackColor = false;
-            // 
-            // btnReports
-            // 
-            this.btnReports.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnReports.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnReports.Location = new System.Drawing.Point(61, 298);
-            this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(221, 32);
-            this.btnReports.TabIndex = 22;
-            this.btnReports.Text = "التقارير";
-            this.btnReports.UseVisualStyleBackColor = false;
-            // 
-            // btnReturnInvoices
-            // 
-            this.btnReturnInvoices.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnReturnInvoices.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnReturnInvoices.Location = new System.Drawing.Point(61, 192);
-            this.btnReturnInvoices.Name = "btnReturnInvoices";
-            this.btnReturnInvoices.Size = new System.Drawing.Size(221, 32);
-            this.btnReturnInvoices.TabIndex = 21;
-            this.btnReturnInvoices.Text = "فواتير مرجع البيع";
-            this.btnReturnInvoices.UseVisualStyleBackColor = false;
-            // 
-            // btnSalesInvoices
-            // 
-            this.btnSalesInvoices.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSalesInvoices.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnSalesInvoices.Location = new System.Drawing.Point(61, 139);
-            this.btnSalesInvoices.Name = "btnSalesInvoices";
-            this.btnSalesInvoices.Size = new System.Drawing.Size(221, 32);
-            this.btnSalesInvoices.TabIndex = 20;
-            this.btnSalesInvoices.Text = "فواتير البيع";
-            this.btnSalesInvoices.UseVisualStyleBackColor = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.SystemColors.Control;
-            this.label10.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label10.Location = new System.Drawing.Point(256, 31);
-            this.label10.Name = "label10";
-            this.label10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label10.Size = new System.Drawing.Size(68, 15);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "رقم العميل  : ";
-            // 
-            // lblCustomerPhoneNumber
-            // 
-            this.lblCustomerPhoneNumber.AutoSize = true;
-            this.lblCustomerPhoneNumber.BackColor = System.Drawing.SystemColors.Control;
-            this.lblCustomerPhoneNumber.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblCustomerPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblCustomerPhoneNumber.Location = new System.Drawing.Point(160, 31);
-            this.lblCustomerPhoneNumber.Name = "lblCustomerPhoneNumber";
-            this.lblCustomerPhoneNumber.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblCustomerPhoneNumber.Size = new System.Drawing.Size(63, 15);
-            this.lblCustomerPhoneNumber.TabIndex = 17;
-            this.lblCustomerPhoneNumber.Text = "97754532";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.SystemColors.Control;
-            this.label11.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label11.Location = new System.Drawing.Point(254, 65);
-            this.label11.Name = "label11";
-            this.label11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label11.Size = new System.Drawing.Size(68, 15);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "أسم العميل : ";
-            // 
-            // lblCustomerName
-            // 
-            this.lblCustomerName.AutoSize = true;
-            this.lblCustomerName.BackColor = System.Drawing.SystemColors.Control;
-            this.lblCustomerName.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblCustomerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblCustomerName.Location = new System.Drawing.Point(97, 61);
-            this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblCustomerName.Size = new System.Drawing.Size(141, 15);
-            this.lblCustomerName.TabIndex = 18;
-            this.lblCustomerName.Text = "محمود احمد حامد عبدالحميد";
+            this.btnCustomerCheckAccount.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnCustomerCheckAccount.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnCustomerCheckAccount.Location = new System.Drawing.Point(61, 510);
+            this.btnCustomerCheckAccount.Name = "btnCustomerCheckAccount";
+            this.btnCustomerCheckAccount.Size = new System.Drawing.Size(221, 32);
+            this.btnCustomerCheckAccount.TabIndex = 30;
+            this.btnCustomerCheckAccount.Text = "كشف حساب العميل";
+            this.btnCustomerCheckAccount.UseVisualStyleBackColor = false;
+          
             // 
             // btnCancel2
             // 
@@ -715,16 +613,158 @@
             this.btnCancel2.UseVisualStyleBackColor = false;
             this.btnCancel2.Click += new System.EventHandler(this.btnCancel2_Click);
             // 
-            // btnCustomerCheckAccount
+            // label12
             // 
-            this.btnCustomerCheckAccount.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnCustomerCheckAccount.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnCustomerCheckAccount.Location = new System.Drawing.Point(61, 510);
-            this.btnCustomerCheckAccount.Name = "btnCustomerCheckAccount";
-            this.btnCustomerCheckAccount.Size = new System.Drawing.Size(221, 32);
-            this.btnCustomerCheckAccount.TabIndex = 30;
-            this.btnCustomerCheckAccount.Text = "كشف حساب العميل";
-            this.btnCustomerCheckAccount.UseVisualStyleBackColor = false;
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.SystemColors.Control;
+            this.label12.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label12.Location = new System.Drawing.Point(38, 90);
+            this.label12.Name = "label12";
+            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label12.Size = new System.Drawing.Size(287, 15);
+            this.label12.TabIndex = 28;
+            this.label12.Text = "----------------------------------------------------------------------";
+        
+            // 
+            // btnReturnPurchacesInvoice
+            // 
+            this.btnReturnPurchacesInvoice.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnReturnPurchacesInvoice.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnReturnPurchacesInvoice.Location = new System.Drawing.Point(61, 404);
+            this.btnReturnPurchacesInvoice.Name = "btnReturnPurchacesInvoice";
+            this.btnReturnPurchacesInvoice.Size = new System.Drawing.Size(221, 32);
+            this.btnReturnPurchacesInvoice.TabIndex = 26;
+            this.btnReturnPurchacesInvoice.Text = "فواتير مرجع الشراء";
+            this.btnReturnPurchacesInvoice.UseVisualStyleBackColor = false;
+          
+            // 
+            // btnPurchecesInvoices
+            // 
+            this.btnPurchecesInvoices.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnPurchecesInvoices.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnPurchecesInvoices.Location = new System.Drawing.Point(61, 351);
+            this.btnPurchecesInvoices.Name = "btnPurchecesInvoices";
+            this.btnPurchecesInvoices.Size = new System.Drawing.Size(221, 32);
+            this.btnPurchecesInvoices.TabIndex = 25;
+            this.btnPurchecesInvoices.Text = "فواتير الشراء";
+            this.btnPurchecesInvoices.UseVisualStyleBackColor = false;
+          
+            // 
+            // btnPaymentVoucher
+            // 
+            this.btnPaymentVoucher.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnPaymentVoucher.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnPaymentVoucher.Location = new System.Drawing.Point(61, 457);
+            this.btnPaymentVoucher.Name = "btnPaymentVoucher";
+            this.btnPaymentVoucher.Size = new System.Drawing.Size(221, 32);
+            this.btnPaymentVoucher.TabIndex = 24;
+            this.btnPaymentVoucher.Text = "سندات الصرف";
+            this.btnPaymentVoucher.UseVisualStyleBackColor = false;
+            
+            // 
+            // btnReceivedVoucher
+            // 
+            this.btnReceivedVoucher.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnReceivedVoucher.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnReceivedVoucher.Location = new System.Drawing.Point(61, 245);
+            this.btnReceivedVoucher.Name = "btnReceivedVoucher";
+            this.btnReceivedVoucher.Size = new System.Drawing.Size(221, 32);
+            this.btnReceivedVoucher.TabIndex = 23;
+            this.btnReceivedVoucher.Text = "سندات القبض";
+            this.btnReceivedVoucher.UseVisualStyleBackColor = false;
+           
+            // 
+            // btnReports
+            // 
+            this.btnReports.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnReports.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnReports.Location = new System.Drawing.Point(61, 298);
+            this.btnReports.Name = "btnReports";
+            this.btnReports.Size = new System.Drawing.Size(221, 32);
+            this.btnReports.TabIndex = 22;
+            this.btnReports.Text = "التقارير";
+            this.btnReports.UseVisualStyleBackColor = false;
+       
+            // 
+            // btnReturnInvoices
+            // 
+            this.btnReturnInvoices.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnReturnInvoices.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnReturnInvoices.Location = new System.Drawing.Point(61, 192);
+            this.btnReturnInvoices.Name = "btnReturnInvoices";
+            this.btnReturnInvoices.Size = new System.Drawing.Size(221, 32);
+            this.btnReturnInvoices.TabIndex = 21;
+            this.btnReturnInvoices.Text = "فواتير مرجع البيع";
+            this.btnReturnInvoices.UseVisualStyleBackColor = false;
+          
+            // 
+            // btnSalesInvoices
+            // 
+            this.btnSalesInvoices.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSalesInvoices.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnSalesInvoices.Location = new System.Drawing.Point(61, 139);
+            this.btnSalesInvoices.Name = "btnSalesInvoices";
+            this.btnSalesInvoices.Size = new System.Drawing.Size(221, 32);
+            this.btnSalesInvoices.TabIndex = 20;
+            this.btnSalesInvoices.Text = "فواتير البيع";
+            this.btnSalesInvoices.UseVisualStyleBackColor = false;
+           
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.SystemColors.Control;
+            this.label10.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label10.Location = new System.Drawing.Point(256, 31);
+            this.label10.Name = "label10";
+            this.label10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label10.Size = new System.Drawing.Size(68, 15);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "رقم العميل  : ";
+           
+            // 
+            // lblCustomerPhoneNumber
+            // 
+            this.lblCustomerPhoneNumber.AutoSize = true;
+            this.lblCustomerPhoneNumber.BackColor = System.Drawing.SystemColors.Control;
+            this.lblCustomerPhoneNumber.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblCustomerPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lblCustomerPhoneNumber.Location = new System.Drawing.Point(160, 31);
+            this.lblCustomerPhoneNumber.Name = "lblCustomerPhoneNumber";
+            this.lblCustomerPhoneNumber.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblCustomerPhoneNumber.Size = new System.Drawing.Size(63, 15);
+            this.lblCustomerPhoneNumber.TabIndex = 17;
+            this.lblCustomerPhoneNumber.Text = "97754532";
+         
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.SystemColors.Control;
+            this.label11.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label11.Location = new System.Drawing.Point(254, 65);
+            this.label11.Name = "label11";
+            this.label11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label11.Size = new System.Drawing.Size(68, 15);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "أسم العميل : ";
+          
+            // 
+            // lblCustomerName
+            // 
+            this.lblCustomerName.AutoSize = true;
+            this.lblCustomerName.BackColor = System.Drawing.SystemColors.Control;
+            this.lblCustomerName.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblCustomerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lblCustomerName.Location = new System.Drawing.Point(97, 61);
+            this.lblCustomerName.Name = "lblCustomerName";
+            this.lblCustomerName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblCustomerName.Size = new System.Drawing.Size(141, 15);
+            this.lblCustomerName.TabIndex = 18;
+            this.lblCustomerName.Text = "وليد حيدر احمد عثمان";
+           
             // 
             // ctrlCustomers
             // 

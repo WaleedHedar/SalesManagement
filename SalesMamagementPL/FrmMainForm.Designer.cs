@@ -172,7 +172,7 @@
             // 
             // btnCustomers
             // 
-            this.btnCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnCustomers.BackColor = System.Drawing.Color.Cyan;
             this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCustomers.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnCustomers.Location = new System.Drawing.Point(28, 240);
@@ -207,13 +207,14 @@
             // 
             // btnSuppliers
             // 
+            this.btnSuppliers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnSuppliers.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnSuppliers.Location = new System.Drawing.Point(28, 295);
             this.btnSuppliers.Name = "btnSuppliers";
             this.btnSuppliers.Size = new System.Drawing.Size(212, 37);
             this.btnSuppliers.TabIndex = 7;
             this.btnSuppliers.Text = "إدارة الموردين";
-            this.btnSuppliers.UseVisualStyleBackColor = true;
+            this.btnSuppliers.UseVisualStyleBackColor = false;
             this.btnSuppliers.Click += new System.EventHandler(this.btnSuppliers_Click);
             // 
             // btnPaymentVoucher

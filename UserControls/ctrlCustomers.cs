@@ -192,6 +192,7 @@ namespace SalesManagementApp.UserControls
                 if (AddNewCustomer())
                 {
                     MessageBox.Show("تمت إضافة العميل بنجاح", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    _EnMode = Mode.Update;
                     txtCustomerPhoneNumber.Clear();
                     txtCustomerName.Clear();
                     txtAreaName.Clear();
@@ -391,7 +392,7 @@ namespace SalesManagementApp.UserControls
 
         private void btnDeleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int customerId = GetSelectedCustomerID();
+            _CustomerID = GetSelectedCustomerID();
 
               DialogResult result = MessageBox.Show(
                                         "هل تريد حذف العميل؟",
@@ -405,7 +406,7 @@ namespace SalesManagementApp.UserControls
                 return;
              }
 
-            if (Customer1.DeleteCustomerBL(customerId))
+            if (Customer1.DeleteCustomerBL(_CustomerID))
             {
                 MessageBox.Show("تم حذف العميل بنجاح", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 RefereshDataGridView();
@@ -443,7 +444,8 @@ namespace SalesManagementApp.UserControls
             lblCustomerName.Text = "---------------------------";  
         }
 
-
+      
+      
     }
 
 }

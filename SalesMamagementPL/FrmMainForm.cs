@@ -26,6 +26,8 @@ namespace SalesManagementApp.SalesMamagementPL
         }
 
         ctrlCustomers _ctrlCustomers = new ctrlCustomers();
+        ctrlSuppliers _ctrlSuppliers = new ctrlSuppliers();
+
 
         private void LoadControl(UserControl ctrl)
         {
@@ -64,14 +66,11 @@ namespace SalesManagementApp.SalesMamagementPL
         private void btnCustomers_Click(object sender, EventArgs e)
         {
             LoadControl(_ctrlCustomers);
-
-            //FrmCustomers FRM = new FrmCustomers();
-            //FRM.ShowDialog();
         }
 
         private void btnSuppliers_Click(object sender, EventArgs e)
         {
-            ActionNotEmplentedYet();
+            LoadControl(_ctrlSuppliers);
         }
 
         private void btnPaymentVoucher_Click(object sender, EventArgs e)

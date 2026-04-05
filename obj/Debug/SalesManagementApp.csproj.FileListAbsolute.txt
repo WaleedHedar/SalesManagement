@@ -30,6 +30,7 @@ D:\MyProjectSalesManagement\SalesManagement\obj\Debug\SalesManagementApp.Propert
 D:\MyProjectSalesManagement\SalesManagement\obj\Debug\SalesManagementApp.SalesMamagementPL.FrmLogIn.resources
 D:\MyProjectSalesManagement\SalesManagement\obj\Debug\SalesManagementApp.SalesMamagementPL.FrmMainForm.resources
 D:\MyProjectSalesManagement\SalesManagement\obj\Debug\SalesManagementApp.UserControls.ctrlCustomers.resources
+D:\MyProjectSalesManagement\SalesManagement\obj\Debug\SalesManagementApp.UserControls.ctrlSuppliers.resources
 D:\MyProjectSalesManagement\SalesManagement\obj\Debug\SalesManagementApp.csproj.GenerateResource.cache
 D:\MyProjectSalesManagement\SalesManagement\obj\Debug\SalesManagementApp.csproj.CoreCompileInputs.cache
 D:\MyProjectSalesManagement\SalesManagement\obj\Debug\SalesMan.BE60B5EC.Up2Date
