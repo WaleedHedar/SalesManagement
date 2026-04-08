@@ -27,6 +27,7 @@ namespace SalesManagementApp.SalesMamagementPL
 
         ctrlCustomers _ctrlCustomers = new ctrlCustomers();
         ctrlSuppliers _ctrlSuppliers = new ctrlSuppliers();
+        ctrlIProducts _ctrlProducts = new ctrlIProducts();
 
 
         private void LoadControl(UserControl ctrl)
@@ -98,9 +99,9 @@ namespace SalesManagementApp.SalesMamagementPL
             ActionNotEmplentedYet();
         }
 
-        private void btnItems_Click(object sender, EventArgs e)
+        private void btnProducts_Click(object sender, EventArgs e)
         {
-            ActionNotEmplentedYet();
+            LoadControl(_ctrlProducts);
         }
 
         private void FrmMainForm_FormClosing(object sender, FormClosingEventArgs e)

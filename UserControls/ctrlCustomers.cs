@@ -187,6 +187,14 @@ namespace SalesManagementApp.UserControls
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (txtCustomerPhoneNumber.Text == string.Empty || txtCustomerName.Text == string.Empty)
+            {
+                MessageBox.Show(" من فضلك اضف بيانات العميل", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+
+            }
+
+
             if (_EnMode == Mode.Add)
             {
                 if (AddNewCustomer())

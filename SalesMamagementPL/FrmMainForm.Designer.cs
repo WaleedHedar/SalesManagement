@@ -39,7 +39,7 @@
             this.btnReports = new System.Windows.Forms.Button();
             this.btnGetAllPurchesesInvoices = new System.Windows.Forms.Button();
             this.btnCustomers = new System.Windows.Forms.Button();
-            this.btnItems = new System.Windows.Forms.Button();
+            this.btnProducts = new System.Windows.Forms.Button();
             this.btnReceiptVoucher = new System.Windows.Forms.Button();
             this.btnSuppliers = new System.Windows.Forms.Button();
             this.btnPaymentVoucher = new System.Windows.Forms.Button();
@@ -62,7 +62,7 @@
             this.panel1.Controls.Add(this.btnReports);
             this.panel1.Controls.Add(this.btnGetAllPurchesesInvoices);
             this.panel1.Controls.Add(this.btnCustomers);
-            this.panel1.Controls.Add(this.btnItems);
+            this.panel1.Controls.Add(this.btnProducts);
             this.panel1.Controls.Add(this.btnReceiptVoucher);
             this.panel1.Controls.Add(this.btnSuppliers);
             this.panel1.Controls.Add(this.btnPaymentVoucher);
@@ -183,16 +183,17 @@
             this.btnCustomers.UseVisualStyleBackColor = false;
             this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
             // 
-            // btnItems
+            // btnProducts
             // 
-            this.btnItems.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnItems.Location = new System.Drawing.Point(28, 464);
-            this.btnItems.Name = "btnItems";
-            this.btnItems.Size = new System.Drawing.Size(212, 37);
-            this.btnItems.TabIndex = 4;
-            this.btnItems.Text = "فهرس الأصناف";
-            this.btnItems.UseVisualStyleBackColor = true;
-            this.btnItems.Click += new System.EventHandler(this.btnItems_Click);
+            this.btnProducts.BackColor = System.Drawing.Color.Lime;
+            this.btnProducts.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnProducts.Location = new System.Drawing.Point(28, 464);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.Size = new System.Drawing.Size(212, 37);
+            this.btnProducts.TabIndex = 4;
+            this.btnProducts.Text = "فهرس الأصناف";
+            this.btnProducts.UseVisualStyleBackColor = false;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
             // btnReceiptVoucher
             // 
@@ -207,7 +208,7 @@
             // 
             // btnSuppliers
             // 
-            this.btnSuppliers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnSuppliers.BackColor = System.Drawing.Color.Cyan;
             this.btnSuppliers.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnSuppliers.Location = new System.Drawing.Point(28, 295);
             this.btnSuppliers.Name = "btnSuppliers";
@@ -267,7 +268,7 @@
         private System.Windows.Forms.Button btnSuppliers;
         private System.Windows.Forms.Button btnGetAllPurchesesInvoices;
         private System.Windows.Forms.Button btnAddPurchesesInvoice;
-        private System.Windows.Forms.Button btnItems;
+        private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.Button btnPaymentVoucher;
         private System.Windows.Forms.Button btnCustomers;
         private System.Windows.Forms.Button btnGetAllSalesInvoices;

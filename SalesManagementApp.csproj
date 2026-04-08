@@ -77,11 +77,13 @@
       <DependentUpon>FrmMainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SalesManagementBL\clsCustomerBL.cs" />
+    <Compile Include="SalesManagementBL\clsProductsBL.cs" />
     <Compile Include="SalesManagementBL\clsSupplierBL.cs" />
     <Compile Include="SalesManagementDAL\Category.cs">
       <DependentUpon>SalesDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="SalesManagementDAL\clsCustomerDAL.cs" />
+    <Compile Include="SalesManagementDAL\clsProductsDAL.cs" />
     <Compile Include="SalesManagementDAL\clsSuppliersDAL.cs" />
     <Compile Include="SalesManagementDAL\Customer.cs">
       <DependentUpon>SalesDBModel.tt</DependentUpon>
@@ -138,11 +140,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SalesManagmentDBDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SalesManagmentDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesManagmentDBDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ctrlCustomers.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\ctrlCustomers.Designer.cs">
       <DependentUpon>ctrlCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ctrlProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ctrlProducts.Designer.cs">
+      <DependentUpon>ctrlProducts.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ctrlSuppliers.cs">
       <SubType>UserControl</SubType>
@@ -167,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ctrlCustomers.resx">
       <DependentUpon>ctrlCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ctrlProducts.resx">
+      <DependentUpon>ctrlProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ctrlSuppliers.resx">
       <DependentUpon>ctrlSuppliers.cs</DependentUpon>
@@ -209,6 +225,17 @@
     </None>
     <None Include="SalesManagmentDBDataSet1.xss">
       <DependentUpon>SalesManagmentDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SalesManagmentDBDataSet2.xsc">
+      <DependentUpon>SalesManagmentDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SalesManagmentDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalesManagmentDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SalesManagmentDBDataSet2.xss">
+      <DependentUpon>SalesManagmentDBDataSet2.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

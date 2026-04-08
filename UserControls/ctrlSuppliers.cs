@@ -117,6 +117,7 @@ namespace SalesManagementApp.UserControls
         {
             SetupDataGridView();
             dgvAllSuppliers.RowPostPaint += dgvAllSuppliers_RowPostPaint;
+            
             grbBoxAddEditSuppliers.Enabled = false;
             grbBoxSupplierMovements.Enabled = false;
             lblSupplierName.Text = "";
@@ -181,6 +182,14 @@ namespace SalesManagementApp.UserControls
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if(txtSupplierPhoneNumber.Text == string.Empty ||  txtSupplierName.Text == string.Empty)
+            {
+                MessageBox.Show(" من فضلك اضف بيانات المورد", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; 
+
+            }
+
+
             if (_EnMode == Mode.Add)
             {
                 if (AddNewSupplier())
